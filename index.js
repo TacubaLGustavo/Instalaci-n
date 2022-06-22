@@ -1,10 +1,9 @@
 const { resolveSoa } = require("dns");
 const express = require("express");
 const app = express ();
-const os = require('os');
+var colors = require('colors');
 
-let cpu = os.cpus();
-console.log(cpu);
+console.log('Hola'.green);
 
 app.get('/', (req,res) =>
 {
